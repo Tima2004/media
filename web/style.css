@@ -1,0 +1,60 @@
+.section-1, .section-2, .section-4, .section-5, .section-7, .section6-area2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-1 {
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-around;
+}
+.content {
+    padding: 2% 6% 0px 6%;
+}
+.inline-block {
+    display: inline-block;
+    margin-left: 45px;
+}
+.section-1 img {
+    width: 80%;
+}
+.section5-area {
+    width: 25%;
+    height: 279px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.section5-area1 {
+    background-image: url(short.png);
+}
+.section5-area2 {
+    background-image: url(short1.png);
+}
+.section5-area > div {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .section5-area {
+        width: 33%;
+    }
+}
+
+@media (max-width: 767px){
+    .section-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-1 > div {
+        margin-bottom: 10px;
+    }
+    .section-1 div span:first-child {
+        margin-left: 0;
+    }
+    .section5-area {
+        width: 50%;
+    }
+}
